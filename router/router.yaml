@@ -5,6 +5,14 @@ supergraph:
   listen: 0.0.0.0:${env.PORT:-4000}
   introspection: true
 
+coprocessor:
+  url: https://coprocessor-wn3vwa6nlq-ue.a.run.app 
+  timeout: 2s 
+  router:
+    response:
+      body: true
+
+
 # For demo purposes - can remove or enable homepage
 sandbox:
   enabled: true
